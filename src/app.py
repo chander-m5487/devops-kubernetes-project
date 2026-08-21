@@ -6,22 +6,22 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return jsonify({
-        "message": "Welcome to the DevOps Kubernetes Project.",
+        "message": "Welcome to the DevOps Kubernetes Project",
         "version": "1.0"
     })
 
 
 @app.route("/health")
 def health():
-    return "Application is healthy.", 200
+    return "Application is healthy", 200
 
 
 @app.route("/api/users")
 def users():
     return jsonify([
-        {"id": 1, "name": "Ramesh"},
-        {"id": 2, "name": "Suresh"},
-        {"id": 3, "name": "Rakesh"}
+        {"id": 1, "name": "Alice"},
+        {"id": 2, "name": "Bob"},
+        {"id": 3, "name": "Charlie"}
     ])
 
 
